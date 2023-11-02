@@ -3,27 +3,35 @@ import { ApolloServer } from '@apollo/server';
 import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
 import bodyParser from 'body-parser';
 import { expressMiddleware } from '@apollo/server/express4'
-import cors from 'cors'
+import cors from 'cors';
+import fakeData from './fakeData/index.js';
+import express from 'express';
 const app = express();
 const httpServer = http.createServer(app)
 
 const typeDefs = `#graphql
-    type Query {
-
+    type Folder {
+        id:String,
+        name:String,
+        createdAt:String,
+        author:Author,
+    }
+    type Author {
+        id: String,
+        name:String
     }
 
-   
+    type Query {
+        folders :[Folder]
+    }
 `;
-// type Mutation {
 
-// }
-
-// type Subscription {
-    
-// }
 const resolvers = {
     Query : {
-        name : () => {return 'Vinh dbe'}
+        folders : () => { return fakeData.folders}
+    },
+    Folder : {
+        author : () => {return {id : 1,name:"name"}}
     }
 };
 
