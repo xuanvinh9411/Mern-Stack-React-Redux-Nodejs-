@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev" : "nodemon server",
+    "dev": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/xuanvinh9411/Mern-Stack-React-Redux-Nodejs-#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "config": "^3.3.11",
     "express": "^4.19.2",
     "express-validator": "^7.0.1",
     "gravatar": "^1.8.2",
