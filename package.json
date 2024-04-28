@@ -1,0 +1,19 @@
+{
+  "name": "mern-stack-react-redux-nodejs-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuanvinh9411/Mern-Stack-React-Redux-Nodejs-.git"
+  },
+  "author": "vinh.lx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuanvinh9411/Mern-Stack-React-Redux-Nodejs-/issues"
+  },
+  "homepage": "https://github.com/xuanvinh9411/Mern-Stack-React-Redux-Nodejs-#readme"
+}
