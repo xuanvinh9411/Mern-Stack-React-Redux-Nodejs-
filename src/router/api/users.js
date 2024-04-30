@@ -6,6 +6,6 @@ const asyncHandler = require('../../helpers/asyncHandler')
 //@router   Get api/users
 //@desc     Test router
 //@access  Public
-router.post('/', validateCreateUser, asyncHandler(ctrlUser.insertUser));
+router.post('/', validateCreateUser, asyncHandler(ctrlUser.signup));
 
 module.exports = router
